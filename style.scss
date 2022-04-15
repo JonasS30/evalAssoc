@@ -1,0 +1,133 @@
+$font-family :  'Dancing Script', cursive;
+$colorBlue : #09B5BF;
+$colorYellow : #F0C53B;
+$colorGold : #d1bb95;
+
+
+body{
+    margin: 0;
+    padding: 0; 
+    overflow-x: hidden;        
+
+}
+
+header {
+  font-family: $font-family;
+  font-size: 50px;
+  
+  
+  .navbar{
+    height: 120px;
+    justify-content: space-around;
+    background-color: $colorBlue !important;
+      
+
+
+
+    .logo{
+      padding: 10px;
+      margin-left: 5%;
+      
+      
+      img{      
+        margin-left:20px;
+        height:90px;
+        border-radius: 10%;
+      }
+    }
+    
+    .navbar-nav{
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      .nav-link{       
+        margin-bottom: 30px;
+        height: 70px;
+        background: linear-gradient(to top, $colorYellow 3% , rgba(255,0,0,0) 4px , transparent 5px) no-repeat;
+        background-size: 0 100%;
+        transition: background-size .3s;
+      }
+      
+
+      .nav-link:hover{
+        background-size: 100% 100%;
+        color: $colorYellow ;
+        
+      }
+      
+    }
+    
+  }
+}
+
+
+section{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+
+  .videoContainer{   
+    
+      video{
+        height: calc(100vh - 120px);
+        width: 100vw;
+        object-fit: cover;       
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+                
+      }     
+
+      .img img {     
+        width: 50vw; 
+        position:absolute;        
+        top: 25%;
+        left:25%; 
+        opacity: 0;       
+        animation:  20s animLogoMain ;
+
+
+
+        
+      }
+      @keyframes animLogoMain {
+        0%{opacity: 0;        
+        }
+        75%{
+          opacity: 1;
+        }
+        100%{
+          opacity: 0;
+        }
+
+      }
+
+      button img{
+        height: 25px;
+        width: 25px;
+        position: absolute;
+        bottom : 70px;
+        right: 20px;
+      }
+
+      .hiddenButton{
+        display: none;
+        transition: 0.3s;
+      }
+
+            
+  }
+
+  
+   
+
+  
+
+}
+
+

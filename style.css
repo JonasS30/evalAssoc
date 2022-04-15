@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+header {
+  font-family: "Dancing Script", cursive;
+  font-size: 50px;
+}
+
+header .navbar {
+  height: 120px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #09B5BF !important;
+}
+
+header .navbar .logo {
+  padding: 10px;
+  margin-left: 5%;
+}
+
+header .navbar .logo img {
+  margin-left: 20px;
+  height: 90px;
+  border-radius: 10%;
+}
+
+header .navbar .navbar-nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .navbar .navbar-nav .nav-link {
+  margin-bottom: 30px;
+  height: 70px;
+  background: linear-gradient(to top, #F0C53B 3%, rgba(255, 0, 0, 0) 4px, transparent 5px) no-repeat;
+  background-size: 0 100%;
+  -webkit-transition: background-size .3s;
+  transition: background-size .3s;
+}
+
+header .navbar .navbar-nav .nav-link:hover {
+  background-size: 100% 100%;
+  color: #F0C53B;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+section .videoContainer video {
+  height: calc(100vh - 120px);
+  width: 100vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+section .videoContainer .img img {
+  width: 50vw;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  opacity: 0;
+  -webkit-animation: 20s animLogoMain;
+          animation: 20s animLogoMain;
+}
+
+@-webkit-keyframes animLogoMain {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes animLogoMain {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+section .videoContainer button img {
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  bottom: 70px;
+  right: 20px;
+}
+
+section .videoContainer .hiddenButton {
+  display: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/*# sourceMappingURL=style.css.map */
