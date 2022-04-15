@@ -8,10 +8,11 @@ body{
     margin: 0;
     padding: 0; 
     overflow-x: hidden;        
-
-}
-
-header {
+    
+    
+  }
+  
+  header {
   font-family: $font-family;
   font-size: 50px;
   
@@ -136,4 +137,29 @@ section{
 
 //---------- page Rencontre  -------------
 
+#pageRencontre{
+  font-family: $font-family;
+  background-color: $colorGold;
 
+  h1{
+    font-size: 4em;
+    
+  }
+
+
+
+
+  input, select, textarea{
+    border-color: $colorBlue;
+    font-size: 1.5em;
+  }
+
+  .btn-success{
+    background-color: $colorYellow ;
+    border-color: $colorBlue ;
+
+  }
+  .btn-success:hover{
+    color:$colorBlue
+  }
+}

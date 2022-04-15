@@ -123,4 +123,27 @@ section .videoContainer .hiddenButton {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
+
+#pageRencontre {
+  font-family: "Dancing Script", cursive;
+  background-color: #d1bb95;
+}
+
+#pageRencontre h1 {
+  font-size: 4em;
+}
+
+#pageRencontre input, #pageRencontre select, #pageRencontre textarea {
+  border-color: #09B5BF;
+  font-size: 1.5em;
+}
+
+#pageRencontre .btn-success {
+  background-color: #F0C53B;
+  border-color: #09B5BF;
+}
+
+#pageRencontre .btn-success:hover {
+  color: #09B5BF;
+}
 /*# sourceMappingURL=style.css.map */
