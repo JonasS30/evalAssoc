@@ -162,4 +162,60 @@ section{
   .btn-success:hover{
     color:$colorBlue
   }
+
+
+  .content-2{
+    margin-top: 5%;
+    h1{
+     margin-bottom: 2%;
+    }
+    .backgroundMaps{
+      background-color: white;
+      padding: 15px;
+      border-radius: 0.25rem;
+      margin-bottom: 5%;
+
+      .map-responsive{
+        overflow:hidden;
+        padding-bottom:90%;
+        position:relative;
+        height:0;
+        
+        }
+  
+  
+        iframe{
+          border-radius: 0.25rem;
+          left:0;
+          top:0;
+          height:100%;
+          width:100%;
+          position:absolute;
+          
+        }
+    }
+
+    
+
+  }
+}
+
+//------ Page Péllicule
+
+
+#pagePellicule{
+  background-color: $colorGold;
+  font-family: $font-family;
+  .content2{
+    margin-top: 3%;
+    background-color: white;
+    padding: 15px ;
+    border-radius: 0.25rem;
+    width: fit-content;
+
+
+   
+
+  }
+
 }
