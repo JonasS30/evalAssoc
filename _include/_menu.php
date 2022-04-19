@@ -17,7 +17,7 @@
                     <li class="nav-item"><a class="nav-link" href="index.php">Légendaire</a></li>
                     <li class="nav-item"><a class="nav-link" href="festivite.php">Festivités</a></li>
                     <li class="nav-item"><a class="nav-link" href="rencontre.php">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pellicule.php">Péllicule</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pellicule.php">Pellicule</a></li>
                 </ul>
             </div>
 

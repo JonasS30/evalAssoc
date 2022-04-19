@@ -5,7 +5,7 @@ include '_include/_head.php'
 <?php
 include '_include/_menu.php'
 ?>
-<div class="container text-center mt-4">
+<div class="container text-center mt-5">
     <h1>
         Quelques Souvenirs !
     </h1>
@@ -89,6 +89,7 @@ include '_include/_menu.php'
 
 
     <?php
+    include '_include/_footer.php';
     include '_include/_script.php';
     ?>
 </body>

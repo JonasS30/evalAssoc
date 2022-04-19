@@ -14,6 +14,11 @@ header .navbar {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   background-color: #09B5BF !important;
+  padding-top: 0 !important;
+}
+
+header .navbar .navbar-toggler {
+  border-color: transparent !important;
 }
 
 header .navbar .logo {
@@ -53,7 +58,52 @@ header .navbar .navbar-nav .nav-link:hover {
   color: #F0C53B;
 }
 
-section {
+@media screen and (max-width: 992px) {
+  header .navbar .navbar-collapse {
+    background-color: #d1bb95;
+  }
+  header .navbar .navbar-collapse .nav-link {
+    background: linear-gradient(to top, #09B5BF 3%, rgba(255, 0, 0, 0) 4px, transparent 5px) no-repeat;
+    background-size: 0 100%;
+    -webkit-transition: background-size .3s;
+    transition: background-size .3s;
+  }
+  header .navbar .navbar-collapse .nav-link:hover {
+    background-size: 100% 100%;
+    color: #09B5BF;
+  }
+}
+
+footer {
+  background-color: #09B5BF;
+  font-family: "Dancing Script", cursive;
+}
+
+footer .footContent {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footContent p {
+  font-size: 1.5em;
+}
+
+footer .footContent .footContent1 .bloc-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footContent .footContent3 .blocSocial {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,10 +111,52 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footContent .footContent3 .blocSocial .logoSocial {
+  margin: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footContent .footContent3 .blocSocial .logoSocial a {
+  margin: 5%;
+}
+
+footer .footContent .footContent3 .blocSocial .logoSocial a svg {
+  fill: #F0C53B;
+}
+
+footer .footContent .footContent3 .blocSocial .logoSocial a svg:hover {
+  fill: #f0c63ba9;
+}
+
+#pageLegendaire section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#pageLegendaire section .videoContainer {
   position: relative;
 }
 
-section .videoContainer video {
+#pageLegendaire section .videoContainer video {
   height: calc(100vh - 120px);
   width: 100vw;
   -o-object-fit: cover;
@@ -76,7 +168,7 @@ section .videoContainer video {
   z-index: -1;
 }
 
-section .videoContainer .img img {
+#pageLegendaire section .videoContainer .img img {
   width: 50vw;
   position: absolute;
   top: 25%;
@@ -110,7 +202,12 @@ section .videoContainer .img img {
   }
 }
 
-section .videoContainer button img {
+#pageLegendaire section .videoContainer button {
+  background-color: transparent;
+  border: none;
+}
+
+#pageLegendaire section .videoContainer button img {
   height: 25px;
   width: 25px;
   position: absolute;
@@ -118,10 +215,24 @@ section .videoContainer button img {
   right: 20px;
 }
 
-section .videoContainer .hiddenButton {
+#pageLegendaire section .videoContainer .hiddenButton {
   display: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+#pageLegendaire .content1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#pageLegendaire .content1 .part1 img {
+  height: 350px;
 }
 
 #pageRencontre {
@@ -130,10 +241,12 @@ section .videoContainer .hiddenButton {
 }
 
 #pageRencontre h1 {
-  font-size: 4em;
+  font-size: 3em;
 }
 
-#pageRencontre input, #pageRencontre select, #pageRencontre textarea {
+#pageRencontre input,
+#pageRencontre select,
+#pageRencontre textarea {
   border-color: #09B5BF;
   font-size: 1.5em;
 }
@@ -149,6 +262,7 @@ section .videoContainer .hiddenButton {
 
 #pageRencontre .content-2 {
   margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 #pageRencontre .content-2 h1 {
@@ -183,8 +297,13 @@ section .videoContainer .hiddenButton {
   font-family: "Dancing Script", cursive;
 }
 
+#pagePellicule h1 {
+  font-size: 3em;
+}
+
 #pagePellicule .content2 {
   margin-top: 3%;
+  margin-bottom: 5%;
   background-color: white;
   padding: 15px;
   border-radius: 0.25rem;

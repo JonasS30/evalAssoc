@@ -1,201 +1,308 @@
-$font-family :  'Dancing Script', cursive;
+$font-family : 'Dancing Script',
+cursive;
 $colorBlue : #09B5BF;
 $colorYellow : #F0C53B;
 $colorGold : #d1bb95;
 
-//------- Page index ------
-body{
-    margin: 0;
-    padding: 0; 
-    overflow-x: hidden;        
-    
-    
-  }
-  
-  header {
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+
+
+
+}
+
+//-------Menu nav
+
+header {
   font-family: $font-family;
   font-size: 50px;
-  
-  
-  .navbar{
+
+
+  .navbar {
     height: 120px;
     justify-content: space-around;
     background-color: $colorBlue !important;
-      
+    padding-top: 0 !important;
+
+    .navbar-toggler {
+      border-color: transparent !important;
+    }
 
 
 
-    .logo{
+    .logo {
       padding: 10px;
       margin-left: 5%;
-      
-      
-      img{      
-        margin-left:20px;
-        height:90px;
+
+
+      img {
+        margin-left: 20px;
+        height: 90px;
         border-radius: 10%;
       }
     }
-    
-    .navbar-nav{
+
+    .navbar-nav {
       width: 100%;
       display: flex;
       justify-content: space-around;
       align-items: center;
 
-      .nav-link{       
+
+      .nav-link {
         margin-bottom: 30px;
         height: 70px;
-        background: linear-gradient(to top, $colorYellow 3% , rgba(255,0,0,0) 4px , transparent 5px) no-repeat;
+        background: linear-gradient(to top, $colorYellow 3%, rgba(255, 0, 0, 0) 4px, transparent 5px) no-repeat;
         background-size: 0 100%;
         transition: background-size .3s;
       }
-      
 
-      .nav-link:hover{
+
+      .nav-link:hover {
         background-size: 100% 100%;
-        color: $colorYellow ;
-        
+        color: $colorYellow;
+
       }
-      
+
     }
-    
+
+    @media screen and (max-width: 992px) {
+      .navbar-collapse {
+        background-color: $colorGold;
+
+        .nav-link {
+          background: linear-gradient(to top, $colorBlue 3%, rgba(255, 0, 0, 0) 4px, transparent 5px) no-repeat;
+          background-size: 0 100%;
+          transition: background-size .3s;
+        }
+
+        .nav-link:hover {
+          background-size: 100% 100%;
+          color: $colorBlue;
+        }
+      }
+
+    }
+
   }
 }
 
 
-section{
-  display: flex;
-  flex-direction: column;
-  position: relative;
+//-------Footer-----------
+
+footer {
+  background-color: $colorBlue;
+  font-family: $font-family;
+
+  .footContent {
 
 
-  .videoContainer{   
+    align-items: center;
+    justify-content: center;
+
+    p{
+      font-size: 1.5em;;
+    }
+
+    .footContent1 {
+      .bloc-img {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+
+    .footContent3 {
+
+      .blocSocial {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .logoSocial {
+          margin: 3%;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+
+          a {
+            margin: 5%;
+
+            svg{
+              fill:$colorYellow;
+            }
+            svg:hover{
+              fill:#f0c63ba9
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+//------- Page index ------
+
+#pageLegendaire {
+
+  section {
+    display: flex;
+    flex-direction: column;
     
-      video{
+    
+    .videoContainer {
+      position: relative;
+
+      video {
         height: calc(100vh - 120px);
         width: 100vw;
-        object-fit: cover;       
+        object-fit: cover;
         left: 0;
         right: 0;
         top: 0;
         bottom: 0;
         z-index: -1;
-                
-      }     
 
-      .img img {     
-        width: 50vw; 
-        position:absolute;        
-        top: 25%;
-        left:25%; 
-        opacity: 0;       
-        animation:  20s animLogoMain ;
-
-
-
-        
       }
+
+      .img img {
+        width: 50vw;
+        position: absolute;
+        top: 25%;
+        left: 25%;
+        opacity: 0;
+        animation: 20s animLogoMain;
+
+
+
+
+      }
+
       @keyframes animLogoMain {
-        0%{opacity: 0;        
+        0% {
+          opacity: 0;
         }
-        75%{
+
+        75% {
           opacity: 1;
         }
-        100%{
+
+        100% {
           opacity: 0;
         }
 
       }
+      button{
+        background-color: transparent;
+        border: none;
+      }
 
-      button img{
+     button img {
         height: 25px;
         width: 25px;
         position: absolute;
-        bottom : 70px;
+        bottom: 70px;
         right: 20px;
       }
 
-      .hiddenButton{
+      .hiddenButton {
         display: none;
         transition: 0.3s;
       }
 
-            
+
+    }
+
+
   }
+  .content1{
+    display: flex;
+    flex-direction: row;
+    //flex-wrap: wrap;
+      .part1{
+        img{
+          height: 350px;
+        }
+      }
+      .part2{
 
-  
-   
-
-  
-
+      }
+  }
 }
-
-
-
 
 
 //---------- page Rencontre  -------------
 
-#pageRencontre{
+#pageRencontre {
   font-family: $font-family;
   background-color: $colorGold;
 
-  h1{
-    font-size: 4em;
-    
+  h1 {
+    font-size: 3em;
+
   }
 
 
 
 
-  input, select, textarea{
+  input,
+  select,
+  textarea {
     border-color: $colorBlue;
     font-size: 1.5em;
   }
 
-  .btn-success{
-    background-color: $colorYellow ;
-    border-color: $colorBlue ;
+  .btn-success {
+    background-color: $colorYellow;
+    border-color: $colorBlue;
 
   }
-  .btn-success:hover{
-    color:$colorBlue
+
+  .btn-success:hover {
+    color: $colorBlue
   }
 
 
-  .content-2{
+  .content-2 {
     margin-top: 5%;
-    h1{
-     margin-bottom: 2%;
+    margin-bottom: 5%;
+
+    h1 {
+      margin-bottom: 2%;
     }
-    .backgroundMaps{
+
+    .backgroundMaps {
       background-color: white;
       padding: 15px;
       border-radius: 0.25rem;
       margin-bottom: 5%;
 
-      .map-responsive{
-        overflow:hidden;
-        padding-bottom:90%;
-        position:relative;
-        height:0;
-        
-        }
-  
-  
-        iframe{
-          border-radius: 0.25rem;
-          left:0;
-          top:0;
-          height:100%;
-          width:100%;
-          position:absolute;
-          
-        }
+      .map-responsive {
+        overflow: hidden;
+        padding-bottom: 90%;
+        position: relative;
+        height: 0;
+
+      }
+
+
+      iframe {
+        border-radius: 0.25rem;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+
+      }
     }
 
-    
+
 
   }
 }
@@ -203,19 +310,22 @@ section{
 //------ Page Péllicule
 
 
-#pagePellicule{
+#pagePellicule {
   background-color: $colorGold;
   font-family: $font-family;
-  .content2{
+
+  h1 {
+
+    font-size: 3em;
+  }
+
+  .content2 {
     margin-top: 3%;
+    margin-bottom: 5%;
     background-color: white;
-    padding: 15px ;
+    padding: 15px;
     border-radius: 0.25rem;
     width: fit-content;
-
-
-   
-
   }
 
 }
