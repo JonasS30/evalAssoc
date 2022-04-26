@@ -142,6 +142,12 @@ footer .footContent .footContent3 .blocSocial .logoSocial a svg:hover {
   fill: #f0c63ba9;
 }
 
+#pageLegendaire .deco {
+  padding: 5px;
+  background-color: #d1bb95;
+  border-radius: 3px;
+}
+
 #pageLegendaire section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -221,7 +227,18 @@ footer .footContent .footContent3 .blocSocial .logoSocial a svg:hover {
   transition: 0.3s;
 }
 
-#pageLegendaire .content1 {
+#pageLegendaire section .banderole {
+  margin-top: -30px;
+  width: 102%;
+}
+
+#pageLegendaire .container-fluid {
+  width: auto;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#pageLegendaire .container-fluid .part1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -229,10 +246,67 @@ footer .footContent .footContent3 .blocSocial .logoSocial a svg:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin: 5% 0 5% 0;
 }
 
-#pageLegendaire .content1 .part1 img {
-  height: 350px;
+#pageLegendaire .container-fluid .part1 img {
+  height: 100%;
+  width: 100%;
+}
+
+#pageLegendaire .container-fluid .part1 .content1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 10%;
+}
+
+#pageLegendaire .container-fluid .part2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin: 0 0 5% 0;
+}
+
+#pageLegendaire .container-fluid .part2 div:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#pageLegendaire .container-fluid .part3 {
+  margin: 0 0 5% 0;
+}
+
+#pageLegendaire .container-fluid .part3 p {
+  text-align: justify;
+}
+
+#pageLegendaire .container-fluid .part4 {
+  margin: 0 0 5% 0;
+}
+
+#pageLegendaire .container-fluid .part4 img {
+  width: 100%;
+}
+
+#pageLegendaire .container-fluid .part5 {
+  margin: 0 0 5% 0;
 }
 
 #pageRencontre {

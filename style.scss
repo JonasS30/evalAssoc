@@ -146,9 +146,15 @@ footer {
 
 
 
-//------- Page index ------
+//------- Page légendaire ------
 
 #pageLegendaire {
+
+.deco{
+    padding: 5px;
+    background-color: $colorGold;
+    border-radius: 3px;
+}
 
   section {
     display: flex;
@@ -217,21 +223,66 @@ footer {
 
 
     }
+    .banderole{
+      margin-top: -30px;
+      width: 102%;
+    }
 
 
   }
-  .content1{
-    display: flex;
-    flex-direction: row;
-    //flex-wrap: wrap;
-      .part1{
-        img{
-          height: 350px;
-        }
+  .container-fluid{
+    width: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    .part1{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      margin: 5% 0 5% 0;  
+  
+  
+      img{
+        height: 100%;
+        width: 100%;
       }
-      .part2{
+      .content1{
+        display: flex;
+        flex-direction: column;    
+        padding-left: 10%;
+        
+      }
+  
+    }
+    .part2{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      margin: 0 0 5% 0; 
 
+      div:nth-child(2){
+        display: flex;
+        justify-content: center;
+        
       }
+      
+    }
+
+    .part3{
+      margin: 0 0 5% 0; 
+      p{
+        text-align: justify;
+      }
+      
+    }
+    .part4{
+      margin: 0 0 5% 0; 
+      img{
+        width: 100%;
+      }
+    }
+    .part5{
+      margin: 0 0 5% 0; 
+    }
   }
 }
 
