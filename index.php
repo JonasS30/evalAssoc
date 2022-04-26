@@ -49,10 +49,13 @@ include '_include/_head.php'
 			
 		</div>
 	</div>
+	<div class="row ornement">
+		<img src="./icon/floral-ornament.png" alt="séparation texte">
+	</div>
 	<div class="row part2 align-items-center">
 		<div class="col-md-8 content2">
         <h2>
-                    l'histoire
+                    L'histoire
                 </h2>
 			<p>
 				Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aliquam eget sapien sapien. Curabitur in metus urna. In hac habitasse platea dictumst. Phasellus eu sem sapien, sed vestibulum velit. Nam purus nibh, lacinia non faucibus et, pharetra in dolor. Sed iaculis posuere diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. <small>Aliquam mi erat, aliquam vel luctus eu, pharetra quis elit. Nulla euismod ultrices massa, et feugiat ipsum consequat eu.</small>
@@ -67,12 +70,15 @@ include '_include/_head.php'
             </div>
 		</div>
 	</div>
-	<div class="row part3">
-                <h2>
-                L'association 
-                </h2>
-         
+	<div class="row ornement">
+		<img src="./icon/floral-ornament.png" alt="séparation texte">
+	</div>
+	<div class="row part3 ">
+		
 		<div class="col-md-4">
+			<h2>
+			L'association 
+			</h2>
 			<p>
 				Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aliquam eget sapien sapien. Curabitur in metus urna. In hac habitasse platea dictumst. Phasellus eu sem sapien, sed vestibulum velit. Nam purus nibh, lacinia non faucibus et, pharetra in dolor. Sed iaculis posuere diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. <small>Aliquam mi erat, aliquam vel luctus eu, pharetra quis elit. Nulla euismod ultrices massa, et feugiat ipsum consequat eu.</small>
 			</p>
@@ -100,11 +106,14 @@ include '_include/_head.php'
 		<div class="col-md-2">
 		</div>
 	</div>
+	<div class="row ornement">
+		<img src="./icon/floral-ornament.png" alt="séparation texte">
+	</div>
 	<div class="row part5">
-		<h2>
-			La convivialité
-		</h2>
 		<div class="col-md-12">
+			<h2>
+				La convivialité
+			</h2>
 			<p>
 				Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Aliquam eget sapien sapien. Curabitur in metus urna. In hac habitasse platea dictumst. Phasellus eu sem sapien, sed vestibulum velit. Nam purus nibh, lacinia non faucibus et, pharetra in dolor. Sed iaculis posuere diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. <small>Aliquam mi erat, aliquam vel luctus eu, pharetra quis elit. Nulla euismod ultrices massa, et feugiat ipsum consequat eu.</small>
 			</p>

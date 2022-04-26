@@ -4,6 +4,15 @@ body {
   overflow-x: hidden;
 }
 
+body h1,
+body h2 {
+  font-family: "Dancing Script", cursive;
+}
+
+body p {
+  font-family: "MedievalSharp", cursive;
+}
+
 header {
   font-family: "Dancing Script", cursive;
   font-size: 50px;
@@ -128,6 +137,7 @@ footer .footContent .footContent3 .blocSocial .logoSocial {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
 }
 
 footer .footContent .footContent3 .blocSocial .logoSocial a {
@@ -234,8 +244,8 @@ footer .footContent .footContent3 .blocSocial .logoSocial a svg:hover {
 
 #pageLegendaire .container-fluid {
   width: auto;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 #pageLegendaire .container-fluid .part1 {
@@ -289,8 +299,16 @@ footer .footContent .footContent3 .blocSocial .logoSocial a svg:hover {
           justify-content: center;
 }
 
+#pageLegendaire .container-fluid .part2 div:nth-child(2) img {
+  width: 100%;
+}
+
 #pageLegendaire .container-fluid .part3 {
   margin: 0 0 5% 0;
+}
+
+#pageLegendaire .container-fluid .part3 .col-md-4:nth-child(1) {
+  margin-top: -45px;
 }
 
 #pageLegendaire .container-fluid .part3 p {
@@ -307,6 +325,167 @@ footer .footContent .footContent3 .blocSocial .logoSocial a svg:hover {
 
 #pageLegendaire .container-fluid .part5 {
   margin: 0 0 5% 0;
+}
+
+#pageLegendaire .ornement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 5%;
+}
+
+#pageLegendaire .ornement img {
+  width: 250px;
+}
+
+#pageLegendaire .ornement img:hover {
+  -webkit-animation-name: vibrate-fast;
+          animation-name: vibrate-fast;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+}
+
+@-webkit-keyframes vibrate-fast {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  10% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  20% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  30% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  50% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  70% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  90% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes vibrate-fast {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  10% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  20% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  30% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  50% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  70% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  90% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+#pageLegendaire h2 {
+  margin-left: 30px;
+  position: relative;
+}
+
+#pageLegendaire h2::after {
+  display: block;
+  content: "";
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  background-image: url(./icon/19.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 5px;
+  left: -30px;
+}
+
+@media screen and (max-width: 768px) {
+  .part1 {
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+  }
+  .part2 {
+    -ms-flex-wrap: wrap-reverse !important;
+        flex-wrap: wrap-reverse !important;
+  }
+  .part1 .col-md-4,
+  .part2 .col-md-4 {
+    margin-bottom: 10%;
+  }
+  .part3 .col-md-4:nth-child(1) {
+    margin-top: 0px !important;
+  }
 }
 
 #pageRencontre {
