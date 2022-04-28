@@ -22,6 +22,12 @@ body {
   }
 
 }
+.deco {
+  padding: 5px;
+  background-color: $colorGold;
+  border-radius: 3px;
+  width:fit-content;
+}
 
 //-------Menu nav
 
@@ -163,11 +169,7 @@ footer {
 #pageLegendaire {
   
   
-  .deco {
-    padding: 5px;
-    background-color: $colorGold;
-    border-radius: 3px;
-  }
+  
 
   section {
     display: flex;
@@ -498,6 +500,50 @@ h2::after{
   }
 }
 
+//------- Page festivité -----
+
+#page_festivite{
+  .container{
+
+    article{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h1{
+        margin: 5% 0 5% 0;
+      }
+      p{
+        text-align: center;
+      }
+
+      .deco{
+        margin: 5% 0 5% 0;
+        img{
+         
+          width: 100%;
+          
+        }
+      }
+    }
+
+    aside{
+      a{
+        color: #212529;
+      }
+      li:hover{
+        background-color: #d1bb9593;
+      }
+      .active{
+        background-color: #d1bb95;
+        border-color: transparent;
+      }
+    }
+
+  }
+
+}
 //------ Page Péllicule
 
 

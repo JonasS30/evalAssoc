@@ -13,6 +13,15 @@ body p {
   font-family: "MedievalSharp", cursive;
 }
 
+.deco {
+  padding: 5px;
+  background-color: #d1bb95;
+  border-radius: 3px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 header {
   font-family: "Dancing Script", cursive;
   font-size: 50px;
@@ -150,12 +159,6 @@ footer .footContent .footContent3 .blocSocial .logoSocial a svg {
 
 footer .footContent .footContent3 .blocSocial .logoSocial a svg:hover {
   fill: #f0c63ba9;
-}
-
-#pageLegendaire .deco {
-  padding: 5px;
-  background-color: #d1bb95;
-  border-radius: 3px;
 }
 
 #pageLegendaire section {
@@ -543,6 +546,51 @@ footer .footContent .footContent3 .blocSocial .logoSocial a svg:hover {
   height: 100%;
   width: 100%;
   position: absolute;
+}
+
+#page_festivite .container article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#page_festivite .container article h1 {
+  margin: 5% 0 5% 0;
+}
+
+#page_festivite .container article p {
+  text-align: center;
+}
+
+#page_festivite .container article .deco {
+  margin: 5% 0 5% 0;
+}
+
+#page_festivite .container article .deco img {
+  width: 100%;
+}
+
+#page_festivite .container aside a {
+  color: #212529;
+}
+
+#page_festivite .container aside li:hover {
+  background-color: #d1bb9593;
+}
+
+#page_festivite .container aside .active {
+  background-color: #d1bb95;
+  border-color: transparent;
 }
 
 #pagePellicule {
