@@ -593,6 +593,37 @@ footer .footContent .footContent3 .blocSocial .logoSocial a svg:hover {
   border-color: transparent;
 }
 
+@media screen and (max-width: 780px) {
+  #page_festivite .container .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+#page_festivite #affiche .modal-content, #page_festivite #planning .modal-content {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#page_festivite #affiche .modal-content .modal-body, #page_festivite #planning .modal-content .modal-body {
+  position: relative;
+  padding: 0;
+}
+
+#page_festivite #affiche .modal-content .modal-body button, #page_festivite #planning .modal-content .modal-body button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#page_festivite #affiche .modal-content .modal-body img, #page_festivite #planning .modal-content .modal-body img {
+  width: 100%;
+  height: 100%;
+}
+
 #pagePellicule {
   background-color: #d1bb95;
   font-family: "Dancing Script", cursive;
