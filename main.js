@@ -14,3 +14,12 @@ function offAudio(){
     buttonOffAudio.classList.remove('hiddenButton');
 
 }
+
+
+const pleinEcran = document.getElementById('pleinEcran');
+
+pleinEcran.addEventListener('click',function(){
+   if (playerVideo.requestFullscreen){
+    playerVideo.requestFullscreen();
+   } 
+})

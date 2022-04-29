@@ -246,8 +246,14 @@ footer .footContent .footContent3 .blocSocial .logoSocial a svg:hover {
   transition: 0.3s;
 }
 
+#pageLegendaire section .videoContainer #pleinEcran svg {
+  position: absolute;
+  bottom: 70px;
+  left: 20px;
+}
+
 #pageLegendaire section .banderole {
-  margin-top: -30px;
+  margin-top: -35px;
   width: 102%;
 }
 
