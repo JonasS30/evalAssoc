@@ -1,5 +1,7 @@
 $font-family : 'Dancing Script',
 cursive;
+$font-family2 : 'MedievalSharp',
+cursive;
 $colorBlue : #09B5BF;
 $colorYellow : #F0C53B;
 $colorGold : #d1bb95;
@@ -10,7 +12,14 @@ body {
   padding: 0;
   overflow-x: hidden;
 
+  h1,
+  h2 {
+    font-family: $font-family;
+  }
 
+  p {
+    font-family: $font-family2;
+  }
 
 }
 
@@ -114,8 +123,9 @@ footer {
     align-items: center;
     justify-content: center;
 
-    p{
-      font-size: 1.5em;;
+    p {
+      font-size: 1.5em;
+      ;
     }
 
     .footContent1 {
@@ -138,15 +148,17 @@ footer {
           display: flex;
           flex-direction: row;
           justify-content: center;
+          width: 100%;
 
           a {
             margin: 5%;
 
-            svg{
-              fill:$colorYellow;
+            svg {
+              fill: $colorYellow;
             }
-            svg:hover{
-              fill:#f0c63ba9
+
+            svg:hover {
+              fill: #f0c63ba9
             }
           }
         }
@@ -157,15 +169,22 @@ footer {
 
 
 
-//------- Page index ------
+//------- Page légendaire ------
 
 #pageLegendaire {
+  
+  
+  .deco {
+    padding: 5px;
+    background-color: $colorGold;
+    border-radius: 3px;
+  }
 
   section {
     display: flex;
     flex-direction: column;
-    
-    
+
+
     .videoContainer {
       position: relative;
 
@@ -208,12 +227,13 @@ footer {
         }
 
       }
-      button{
+
+      button {
         background-color: transparent;
         border: none;
       }
 
-     button img {
+      button img {
         height: 25px;
         width: 25px;
         position: absolute;
@@ -229,20 +249,191 @@ footer {
 
     }
 
+    .banderole {
+      margin-top: -30px;
+      width: 102%;
+    }
+
 
   }
-  .content1{
-    display: flex;
-    flex-direction: row;
-    //flex-wrap: wrap;
-      .part1{
-        img{
-          height: 350px;
-        }
+
+  .container-fluid {
+    width: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+
+
+
+    .part1 {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      margin: 5% 0 5% 0;
+
+
+      img {
+        height: 100%;
+        width: 100%;
       }
-      .part2{
+
+      .content1 {
+        display: flex;
+        flex-direction: column;
+        padding-left: 10%;
 
       }
+
+    }
+
+    .part2 {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      margin: 0 0 5% 0;
+
+      div:nth-child(2) {
+        display: flex;
+        justify-content: center;
+
+
+        img {
+          width: 100%;
+        }
+      }
+
+    }
+
+    .part3 {
+      margin: 0 0 5% 0;
+      .col-md-4:nth-child(1){
+        margin-top: -45px;
+      }
+
+      p {
+        text-align: justify;
+      }
+
+    }
+
+    .part4 {
+      margin: 0 0 5% 0;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .part5 {
+      margin: 0 0 5% 0;
+    }
+  }
+
+  .ornement {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+
+    img {
+      width: 250px;
+
+    }
+
+    img:hover {
+      animation-name: vibrate-fast;
+      animation-duration: 1s;
+      animation-timing-function: ease;
+      animation-delay: 1s;
+      animation-iteration-count: 1;
+      animation-direction: normal;
+      animation-fill-mode: none;
+    }
+
+    @keyframes vibrate-fast {
+      0% {
+        transform: translate(0);
+      }
+
+      10% {
+        transform: translate(-2px, -2px);
+      }
+
+      20% {
+        transform: translate(2px, -2px);
+      }
+
+      30% {
+        transform: translate(-2px, 2px);
+      }
+
+      40% {
+        transform: translate(2px, 2px);
+      }
+
+      50% {
+        transform: translate(-2px, -2px);
+      }
+
+      60% {
+        transform: translate(2px, -2px);
+      }
+
+      70% {
+        transform: translate(-2px, 2px);
+      }
+
+      80% {
+        transform: translate(-2px, -2px);
+      }
+
+      90% {
+        transform: translate(2px, -2px);
+      }
+
+      100% {
+        transform: translate(0);
+      }
+    }
+
+  }
+  h2{
+    margin-left: 30px;
+    position: relative;
+    
+}
+h2::after{
+  display: block;
+    content: "";
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    background-image: url(./icon/19.png);
+    background-repeat: no-repeat;    
+    background-size: contain;
+    top: 5px;
+    left: -30px;
+}
+
+
+}
+
+@media screen and (max-width:768px) {
+  .part1 {
+    flex-wrap: wrap !important;
+  }
+
+  .part2 {
+    flex-wrap: wrap-reverse !important;
+  }
+
+  .part1 .col-md-4,
+  .part2 .col-md-4 {
+    margin-bottom: 10%;
+  }
+
+  .part3{
+    .col-md-4:nth-child(1){
+      margin-top: 0px !important;
+    }
   }
 }
 
