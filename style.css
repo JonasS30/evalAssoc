@@ -649,4 +649,8 @@ footer .footContent .footContent3 .blocSocial .logoSocial a svg:hover {
   width: -moz-fit-content;
   width: fit-content;
 }
+
+#pagePellicule .h-100 {
+  width: inherit;
+}
 /*# sourceMappingURL=style.css.map */

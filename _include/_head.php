@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Le légendaire Saint Laurent des Arbres</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="photos/légendaire1.jpg"> 
