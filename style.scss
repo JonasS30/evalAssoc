@@ -22,10 +22,11 @@ header {
 
 
   .navbar {
-    height: 120px;
+    height: auto;
     justify-content: space-around;
     background-color: $colorBlue !important;
     padding-top: 0 !important;
+    padding-bottom: 0 !important;
 
     .navbar-toggler {
       border-color: transparent !important;
@@ -68,6 +69,16 @@ header {
       }
 
     }
+
+    
+  .navbar-toggler:focus {
+    
+    box-shadow: 0 0 0 0; 
+}
+  
+  
+  
+  
 
     @media screen and (max-width: 992px) {
       .navbar-collapse {
